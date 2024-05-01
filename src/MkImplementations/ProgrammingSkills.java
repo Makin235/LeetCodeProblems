@@ -538,7 +538,13 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
 
     @Override
     public int countOdds_1523_e(int low, int high) {
-        return 0;
+        int diff = (high - low) + 1;
+
+        if (diff % 2 == 0 || low % 2 == 0) {
+            return diff / 2;
+        }
+
+        return diff / 2 + 1;
     }
 
     @Override

@@ -186,6 +186,14 @@ public class Main {
         //setZeroes
 
         //countOdds
+        int low1 = 3;
+        int high1 = 7;
+        int low2 = 8;
+        int high2 = 10;
+        System.out.println("Odds number between " + low1 + " and " + high1 +
+                " : " + ps.countOdds_1523_e(low1, high1));
+        System.out.println("Odds number between " + low2 + " and " + high2 +
+                " : " + ps.countOdds_1523_e(low2, high2));
 
         //average
 
