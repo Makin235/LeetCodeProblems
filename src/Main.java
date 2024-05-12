@@ -210,6 +210,23 @@ public class Main {
         //addBinary
 
         //multiply
+        /*String num11 = "987654321";
+        String num12 = "123456789";
+        String num21 = "840477629533";
+        String num22 = "498828660196";
+        String num31 = "2";
+        String num32 = "3";
+        String num41 = "456";
+        String num42 = "123";
+        System.out.println(num11 + " * " + num12 + ": " + ps.multiply_43_m_v1(num11, num12));
+        System.out.println(num21 + " * " + num22 + ": " + ps.multiply_43_m_v1(num21, num22));
+        System.out.println(num31 + " * " + num32 + ": " + ps.multiply_43_m_v1(num31, num32));
+        System.out.println(num41 + " * " + num42 + ": " + ps.multiply_43_m_v1(num41, num42));
+
+        System.out.println(num11 + " * " + num12 + ": " + ps.multiply_43_m_v2(num11, num12));
+        System.out.println(num21 + " * " + num22 + ": " + ps.multiply_43_m_v2(num21, num22));
+        System.out.println(num31 + " * " + num32 + ": " + ps.multiply_43_m_v2(num31, num32));
+        System.out.println(num41 + " * " + num42 + ": " + ps.multiply_43_m_v2(num41, num42));*/
 
         //myPow
 

@@ -586,12 +586,81 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
 
     @Override
     public String multiply_43_m_v1(String num1, String num2) {
-        return null;
+        int len1, len2, i, j, prod, carry, ind, temp;
+        len1 = num1.length();
+        len2 = num2.length();
+        long sum, total;
+        total = 0;
+        carry = 0;
+        ind = 0;
+        StringBuilder result = new StringBuilder();
+        Integer [] res = new Integer[len1 + len2];
+
+        for (i = len1 - 1; i >= 0; i--) {
+            sum = 0;
+            for (j = len2 - 1; j >= 0; j--) {
+                prod = ((int)num1.charAt(i) - 48) * ((int)num2.charAt(j) - 48) + carry;
+
+                if (j != 0 && prod >= 10) {
+                    carry = prod / 10;
+                    if (prod % 10 != 0) {
+                        sum += (long) ((prod % 10) * Math.pow(10, len2 - j - 1 + ind));
+                    }
+                } else {
+                    carry = 0;
+                    sum += (long) (prod * Math.pow(10, len2 - j - 1 + ind));
+                }
+
+                if (j == 0) {
+                    total += sum;
+                    ind++;
+                }
+            }
+        }
+
+        return Long.toString(total);
     }
 
     @Override
     public String multiply_43_m_v2(String num1, String num2) {
-        return null;
+        int len1, len2, i, j, prod, carry;
+        len1 = num1.length();
+        len2 = num2.length();
+        carry = 0;
+        StringBuilder result = new StringBuilder();
+        Integer [] res = new Integer[len1 + len2];
+        Arrays.fill(res, 0);
+
+        for (i = len1 - 1; i >= 0; i--) {
+            for (j = len2 - 1; j >= 0; j--) {
+                prod = ((int)num1.charAt(i) - '0') * ((int)num2.charAt(j) - '0') + carry;
+
+                if (res[i+j+1] + prod >= 10) {
+                    carry = prod / 10;
+                    res[i+j+1] = res[i+j+1] + (prod % 10);
+                    if (res[i+j+1] >= 10) {
+                        carry += res[i+j+1] / 10;
+                        res[i+j+1] = res[i+j+1] % 10;
+                    }
+                } else {
+                    carry = 0;
+                    res[i+j+1] = res[i+j+1] + prod;
+                }
+            }
+        }
+
+        boolean isNotLeadingZero = false;
+        for (i = 0; i < len1 + len2; i++) {
+            if (!isNotLeadingZero && res[i] != 0) {
+                isNotLeadingZero = true;
+            }
+
+            if (isNotLeadingZero) {
+                result.append(res[i]);
+            }
+        }
+
+        return result.toString();
     }
 
     @Override
