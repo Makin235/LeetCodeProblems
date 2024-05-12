@@ -68,7 +68,8 @@ public interface ProgrammingSkillsInterface {
     //27
     public String addBinary_67_e(String a, String b);
     //28
-    public String multiply_43_m(String num1, String num2);
+    public String multiply_43_m_v1(String num1, String num2);
+    public String multiply_43_m_v2(String num1, String num2);
     //29
     public double myPow_50_m(double x, int n);
     //Linked List

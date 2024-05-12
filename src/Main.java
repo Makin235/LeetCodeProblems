@@ -186,16 +186,20 @@ public class Main {
         //setZeroes
 
         //countOdds
-        int low1 = 3;
+        /*int low1 = 3;
         int high1 = 7;
         int low2 = 8;
         int high2 = 10;
         System.out.println("Odds number between " + low1 + " and " + high1 +
                 " : " + ps.countOdds_1523_e(low1, high1));
         System.out.println("Odds number between " + low2 + " and " + high2 +
-                " : " + ps.countOdds_1523_e(low2, high2));
+                " : " + ps.countOdds_1523_e(low2, high2));*/
 
         //average
+        int [] salary1 = {4000,3000,1000,2000};
+        int [] salary2 = {1000,2000,3000};
+        System.out.println("Average of " + Arrays.toString(salary1) + " : " + ps.average_1491_e(salary1));
+        System.out.println("Average of " + Arrays.toString(salary2) + " : " + ps.average_1491_e(salary2));
 
         //lemonadeChange
 

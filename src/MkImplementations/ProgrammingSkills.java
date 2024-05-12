@@ -549,7 +549,19 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
 
     @Override
     public double average_1491_e(int[] salary) {
-        return 0;
+        int min, max, sum;
+        sum = min = max = salary[0];
+
+        for (int i = 1; i < salary.length; i++) {
+            if (salary[i] < min) {
+                min = salary[i];
+            } else if (salary[i] > max) {
+                max = salary[i];
+            }
+            sum += salary[i];
+        }
+
+        return (double) (sum - min - max) / (salary.length - 2);
     }
 
     @Override
@@ -573,7 +585,12 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
     }
 
     @Override
-    public String multiply_43_m(String num1, String num2) {
+    public String multiply_43_m_v1(String num1, String num2) {
+        return null;
+    }
+
+    @Override
+    public String multiply_43_m_v2(String num1, String num2) {
         return null;
     }
 
