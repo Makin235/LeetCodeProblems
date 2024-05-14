@@ -566,7 +566,35 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
 
     @Override
     public boolean lemonadeChange_860_e(int[] bills) {
-        return false;
+        int i, five, ten;
+        five = 0;
+        ten = 0;
+
+        for (i = 0; i < bills.length; i++) {
+            if (bills[i] == 5) {
+                five++;
+            } else if (bills[i] == 10) {
+                if (five < 1) {
+                    return false;
+                } else {
+                    five--;
+                    ten++;
+                }
+            } else {
+                if (ten < 1) {
+                    if (five < 3) {
+                        return false;
+                    } else {
+                        five -= 3;
+                    }
+                } else {
+                    ten--;
+                    five--;
+                }
+            }
+        }
+
+        return (five >= 0) && (ten >= 0);
     }
 
     @Override

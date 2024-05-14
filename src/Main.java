@@ -196,12 +196,16 @@ public class Main {
                 " : " + ps.countOdds_1523_e(low2, high2));*/
 
         //average
-        int [] salary1 = {4000,3000,1000,2000};
+        /*int [] salary1 = {4000,3000,1000,2000};
         int [] salary2 = {1000,2000,3000};
         System.out.println("Average of " + Arrays.toString(salary1) + " : " + ps.average_1491_e(salary1));
-        System.out.println("Average of " + Arrays.toString(salary2) + " : " + ps.average_1491_e(salary2));
+        System.out.println("Average of " + Arrays.toString(salary2) + " : " + ps.average_1491_e(salary2));*/
 
         //lemonadeChange
+        int [] bills1 = {5,5,5,10,20};
+        int [] bills2 = {5,5,10,10,20};
+        System.out.println("Correct change of " + Arrays.toString(bills1) + " is provided : " + ps.lemonadeChange_860_e(bills1));
+        System.out.println("Correct change of " + Arrays.toString(bills2) + " is provided : " + ps.lemonadeChange_860_e(bills2));
 
         //largestPerimeter
 
