@@ -202,12 +202,20 @@ public class Main {
         System.out.println("Average of " + Arrays.toString(salary2) + " : " + ps.average_1491_e(salary2));*/
 
         //lemonadeChange
-        int [] bills1 = {5,5,5,10,20};
-        int [] bills2 = {5,5,10,10,20};
-        System.out.println("Correct change of " + Arrays.toString(bills1) + " is provided : " + ps.lemonadeChange_860_e(bills1));
-        System.out.println("Correct change of " + Arrays.toString(bills2) + " is provided : " + ps.lemonadeChange_860_e(bills2));
+//        int [] bills1 = {5,5,5,10,20};
+//        int [] bills2 = {5,5,10,10,20};
+//        System.out.println("Correct change of " + Arrays.toString(bills1) + " is provided : " + ps.lemonadeChange_860_e(bills1));
+//        System.out.println("Correct change of " + Arrays.toString(bills2) + " is provided : " + ps.lemonadeChange_860_e(bills2));
 
         //largestPerimeter
+        int [] nums1 = {2,1,2};
+        int [] nums2 = {1,2,1,10};
+        int [] nums3 = {1,2,1,2,10};
+        int [] nums4 = {1,2,1,2,7,8};
+        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums1) + " is : " + ps.largestPerimeter_976_e(nums1));
+        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums2) + " is : " + ps.largestPerimeter_976_e(nums2));
+        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums3) + " is : " + ps.largestPerimeter_976_e(nums3));
+        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums4) + " is : " + ps.largestPerimeter_976_e(nums4));
 
         //checkStraightLine
 
