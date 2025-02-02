@@ -626,7 +626,82 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
 
     @Override
     public String addBinary_67_e(String a, String b) {
-        return null;
+        int i, j;
+        int rest = 0;
+        StringBuilder result = new StringBuilder();
+        for (i = a.length() - 1, j = b.length() - 1; i >= 0  && j >= 0; i--,j--) {
+            int sum = (a.charAt(i) - '0') +  (b.charAt(j) - '0') + rest;
+            rest = 0;
+            if (sum == 2) {
+                rest = 1;
+                result.append('0');
+            } else if (sum == 3) {
+                rest = 1;
+                result.append('1');
+            } else {
+                result.append(sum);
+            }
+        }
+
+        if (i >= 0) {
+            for (int k = i; k >= 0; k--) {
+                int sum = (a.charAt(k) - '0') + rest;
+                rest = 0;
+                if (sum > 1) {
+                    rest = 1;
+                    result.append('0');
+                } else {
+                    result.append(sum);
+                }
+            }
+        } else if (j >= 0) {
+            for (int k = j; k >= 0; k--) {
+                int sum = (b.charAt(k) - '0') + rest;
+                rest = 0;
+                if (sum > 1) {
+                    rest = 1;
+                    result.append('0');
+                } else {
+                    result.append(sum);
+                }
+            }
+        }
+
+        if (rest > 0) {
+            result.append('1');
+        }
+
+        return result.reverse().toString();
+    }
+
+    @Override
+    public String addBinary_67_e_v2(String a, String b) {
+        int i = a.length() - 1;
+        int j = b.length() - 1;
+        int rest = 0;
+        StringBuilder result = new StringBuilder();
+        while (i >= 0  || j >= 0 || rest > 0) {
+            int sum = 0;
+            if (i >= 0) {
+                sum = a.charAt(i--) - '0';
+            }
+            if (j >= 0) {
+                sum += b.charAt(j--) - '0';
+            }
+            sum += rest;
+            rest = 0;
+            if (sum == 2) {
+                rest = 1;
+                result.append('0');
+            } else if (sum == 3) {
+                rest = 1;
+                result.append('1');
+            } else {
+                result.append(sum);
+            }
+        }
+
+        return result.reverse().toString();
     }
 
     @Override

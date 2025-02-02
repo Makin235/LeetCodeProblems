@@ -218,14 +218,23 @@ public class Main {
 //        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums4) + " is : " + ps.largestPerimeter_976_e(nums4));
 
         //checkStraightLine
-        int [][] coord1 = {{1,2},{2,3},{3,4},{4,5},{5,6},{6,7}};
-        int [][] coord2 = {{1,1},{2,2},{3,4},{4,5},{5,6},{7,7}};
-        int [][] coord3 = {{0,0},{0,1},{0,2}};
-        System.out.println("The coordinates: " + Arrays.deepToString(coord1) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord1));
-        System.out.println("The coordinates: " + Arrays.deepToString(coord2) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord2));
-        System.out.println("The coordinates: " + Arrays.deepToString(coord3) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord3));
+//        int [][] coord1 = {{1,2},{2,3},{3,4},{4,5},{5,6},{6,7}};
+//        int [][] coord2 = {{1,1},{2,2},{3,4},{4,5},{5,6},{7,7}};
+//        int [][] coord3 = {{0,0},{0,1},{0,2}};
+//        System.out.println("The coordinates: " + Arrays.deepToString(coord1) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord1));
+//        System.out.println("The coordinates: " + Arrays.deepToString(coord2) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord2));
+//        System.out.println("The coordinates: " + Arrays.deepToString(coord3) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord3));
 
         //addBinary
+        String a1 = "11";
+        String b1 = "1";
+        String a2 = "1010";
+        String b2 = "1011";
+        String a3 = "1111";
+        String b3 = "1111";
+        System.out.println(a1 + " + " + b1 + " = " + ps.addBinary_67_e(a1, b1));
+        System.out.println(a2 + " + " + b2 + " = " + ps.addBinary_67_e(a2, b2));
+        System.out.println(a3 + " + " + b3 + " = " + ps.addBinary_67_e_v2(a3, b3));
 
         //multiply
         /*String num11 = "987654321";
