@@ -208,16 +208,22 @@ public class Main {
 //        System.out.println("Correct change of " + Arrays.toString(bills2) + " is provided : " + ps.lemonadeChange_860_e(bills2));
 
         //largestPerimeter
-        int [] nums1 = {2,1,2};
-        int [] nums2 = {1,2,1,10};
-        int [] nums3 = {1,2,1,2,10};
-        int [] nums4 = {1,2,1,2,7,8};
-        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums1) + " is : " + ps.largestPerimeter_976_e(nums1));
-        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums2) + " is : " + ps.largestPerimeter_976_e(nums2));
-        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums3) + " is : " + ps.largestPerimeter_976_e(nums3));
-        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums4) + " is : " + ps.largestPerimeter_976_e(nums4));
+//        int [] nums1 = {2,1,2};
+//        int [] nums2 = {1,2,1,10};
+//        int [] nums3 = {1,2,1,2,10};
+//        int [] nums4 = {1,2,1,2,7,8};
+//        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums1) + " is : " + ps.largestPerimeter_976_e(nums1));
+//        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums2) + " is : " + ps.largestPerimeter_976_e(nums2));
+//        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums3) + " is : " + ps.largestPerimeter_976_e(nums3));
+//        System.out.println("The largest perimeter of a triangle from " + Arrays.toString(nums4) + " is : " + ps.largestPerimeter_976_e(nums4));
 
         //checkStraightLine
+        int [][] coord1 = {{1,2},{2,3},{3,4},{4,5},{5,6},{6,7}};
+        int [][] coord2 = {{1,1},{2,2},{3,4},{4,5},{5,6},{7,7}};
+        int [][] coord3 = {{0,0},{0,1},{0,2}};
+        System.out.println("The coordinates: " + Arrays.deepToString(coord1) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord1));
+        System.out.println("The coordinates: " + Arrays.deepToString(coord2) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord2));
+        System.out.println("The coordinates: " + Arrays.deepToString(coord3) + " forms a straight line : " + ps.checkStraightLine_1232_e(coord3));
 
         //addBinary
 

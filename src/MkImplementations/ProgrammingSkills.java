@@ -610,7 +610,18 @@ public class ProgrammingSkills implements MkInterfaces.ProgrammingSkillsInterfac
 
     @Override
     public boolean checkStraightLine_1232_e(int[][] coordinates) {
-        return false;
+        for (int i = 0; i < coordinates.length - 2; i++) {
+            int crossProduct = 1;
+            int vVectorX = coordinates[i+1][0] - coordinates[i][0];
+            int vVectorY = coordinates[i+1][1] - coordinates[i][1];
+            int wVectorX = coordinates[i+2][0] - coordinates[i][0];
+            int wVectorY = coordinates[i+2][1] - coordinates[i][1];
+            crossProduct = vVectorX * wVectorY - vVectorY * wVectorX;
+            if (crossProduct != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
